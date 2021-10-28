@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.8;
+}
+
+body{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header, .content,.sidebar, .foo{
+    padding: 26px 34px;
+    box-sizing: border-box;
+    color: white;
+}
+
+.header{
+    background-color: #2b2024;
+}
+.content{
+    background-color: #fd0054;
+    flex-basis: 50%;
+}
+.sidebar{
+    background-color: #a80038;
+    flex-basis: 25%;
+}
+.foo{
+    background-color: #2b2024;
+    flex-basis: 100%;
+    margin-top: auto;
+}
+
+@media screen and (max-width: 750px) {
+    .content{
+        flex-basis: 100%;
+    }
+    .sidebar{
+        flex-basis: 100%;
+        order: 1;
+    }
+    .foo{
+        order: 2;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .sidebar{
+        flex-basis: 100%;
+    }
+    .content{
+        flex-basis: 100%;
+    }
+}
+

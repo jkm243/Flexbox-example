@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.item{
+    opacity: 1;
+    cursor: pointer;
+    margin: 20px;
+    color: white;
+    background-color: #7971ea;
+    border-radius: 8px;
+    padding: 30px;
+    font-size: 24px;
+    text-align: center;
+    border: 5px solid #443ea0;
+}
+
+.item:hover{
+    opacity: 0.7;
+}
+
+.container{
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    /* justify-content: center; */
+}
